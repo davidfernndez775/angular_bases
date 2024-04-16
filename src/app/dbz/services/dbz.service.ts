@@ -14,8 +14,6 @@ export class DbzService {
   ];
 
   deleteCharacterById(id: string): void {
-    // // borra los elementos del array a partir del index
-    // this.characters.splice(index, 1);
     this.characters = this.characters.filter(
       (character) => character.id !== id
     );
